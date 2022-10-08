@@ -2,13 +2,16 @@ function Calculate(event) {
     const inputValue = event.target.value;
     const expression = /\+|\-|\*|\//
     const numbers = inputValue.split(expression);
-    console.log(numbers);
     const numberA = +numbers[0];
     const numberB = +numbers[1];
-    let operator = inputValue.match(expression)[0];
+    let getoperator = inputValue.match(expression);
+   if(isNaN(numberA) || isNaN(numberB) || getoperator ===null){
+        updateResult('Operation Not recogniced')
+        return
+    }
+    let operator =getoperator[0]
     const calculator = new Calculator();
-    calculator.add(4);
-    calculator.add(4);
+    calculator.add(numberA);
     console.log(calculator.total);
     let result
     switch (operator) {
