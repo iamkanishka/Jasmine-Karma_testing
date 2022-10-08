@@ -30,5 +30,6 @@ You can say that all their benefits come at a great cost: TIME, but this is comp
 
 So We will be Looking These Unit-Testing with Jasmine and Karma   features and Learn as we go on.
 1. Why Jasmien fo Unit testing. Introduction to Jasmine Fraework for Javascript Application.
+2. Create Simple Calculator Program and Perform add, subtract, multiply, adn divide methods- jasmine. 
 
 
