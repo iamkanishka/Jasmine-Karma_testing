@@ -33,5 +33,7 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 2. Create Simple Calculator Program and Perform add, subtract, multiply, adn divide methods- jasmine. 
 3. Build the Calculator Program UI and Capture the input Value from the TextBox - Jasmine Testing.
 4. Extract numbers and Operator from calculator input with split and match string methods. 
+5. Calculate the result using switch case and update the result in the DOM.
+
 
 
