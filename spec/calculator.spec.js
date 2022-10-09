@@ -114,41 +114,50 @@ describe('calculator.js', () => {
     it('Should throw error when divide by zero', function () {
         const calculator = new Calculator();
         calculator.total = 10;
-        expect(function() {calculator.divide(0)}).toThrow()
+        expect(function () { calculator.divide(0) }).toThrow()
 
-        expect(function() {calculator.divide(0)}).toThrow(new  Error('Number Should not be zero'))
+        expect(function () { calculator.divide(0) }).toThrow(new Error('Number Should not be zero'))
 
     })
 
 
-      //toThrowError Matcher      
-      it('Should throw error with message when divide by zero', function () {
+    //toThrowError Matcher      
+    it('Should throw error with message when divide by zero', function () {
         const calculator = new Calculator();
         calculator.total = 10;
-        expect(function() {calculator.divide(0)}).toThrowError();
+        expect(function () { calculator.divide(0) }).toThrowError();
 
-        expect(function() {calculator.divide(0)}).toThrowError('Number Should not be zero')
-        expect(function() {calculator.divide(0)}).toThrowError(ArithmeticError,'Number Should not be zero')
+        expect(function () { calculator.divide(0) }).toThrowError('Number Should not be zero')
+        expect(function () { calculator.divide(0) }).toThrowError(ArithmeticError, 'Number Should not be zero')
     })
 
-       //tomatch Matcher      
-       it('Should return a total Number', function () {
+    //tomatch Matcher      
+    it('Should return a total Number', function () {
         const calculator = new Calculator();
         calculator.total = 10;
         expect(calculator.add(10)).toBe(20);
         expect(calculator.total).toMatch(/-?\d+/);
         expect(typeof calculator.total).toMatch('ber');
-   });
+    });
 
-          //tomatch Matcher      
-          it('Should return a total as value', function () {
-            const calculator = new Calculator();
-            calculator.total = 10;
+    //jasmine.anytyhing Matcher      
+    it('Should return a total as value', function () {
+        const calculator = new Calculator();
+        calculator.total = 10;
         expect(calculator.total).toEqual(jasmine.anything());
-      //   expect(undefined).toEqual(jasmine.anything());
+        //   expect(undefined).toEqual(jasmine.anything());
+       })
 
-           
-     })
- 
+         //any Matcher      
+    it('Should be an instance', function () {
+        const calculator = new Calculator();
+        calculator.total = 10;
+        expect(calculator).toEqual(jasmine.any(Object));
+        expect(calculator).toEqual(jasmine.any(Calculator));
+        expect(calculator.total).toEqual(jasmine.any(Number));
+
+
+       })
+
 
 });
