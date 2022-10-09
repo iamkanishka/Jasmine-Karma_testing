@@ -158,5 +158,16 @@ describe('calculator.js', () => {
 
    })
 
+   it('Should contain total as key', function () {
+    const calculator = new Calculator();
+    calculator.total = 10;
+    expect(calculator).toEqual(jasmine.objectContaining({
+        total:10
+    }))
+    expect(typeof calculator.total).toEqual(jasmine.stringContaining('num'))
+
+});
+
+
 
 });

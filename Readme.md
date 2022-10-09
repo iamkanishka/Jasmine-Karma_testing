@@ -56,3 +56,4 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 25. toMatch Matcher for matching the actual data using regular expression - Jasmine Testing.
 26. Asymmetric Matcher anything. When to use & what is the use of jasmine.anything - Jasmine testing.
 27. Asymmetric Matcher Jasmine.any. Difference between anything and any matchers - Jasmine Testing.
+28. Jasmine ObjectContaining and StringContaining asymmetric matchers - Jasmine Testing.
