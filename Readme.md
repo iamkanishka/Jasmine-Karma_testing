@@ -57,3 +57,5 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 26. Asymmetric Matcher anything. When to use & what is the use of jasmine.anything - Jasmine testing.
 27. Asymmetric Matcher Jasmine.any. Difference between anything and any matchers - Jasmine Testing.
 28. Jasmine ObjectContaining and StringContaining asymmetric matchers - Jasmine Testing.
+29. What is Custom Matcher. How to create our own matcher & steps for creating it - Jasmine testing.
+30. Practical implementation of the Custom Matchers and use it in our Spec file - Jasmine Testing.
