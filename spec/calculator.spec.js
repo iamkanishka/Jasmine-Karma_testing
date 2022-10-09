@@ -35,13 +35,24 @@ describe('calculator.js', () => {
     })
 
 
+    //toBe Matcher
     it('Should initializethe total', function () {
         const calculator = new Calculator();
         expect(calculator.total).toBe(0);
-        
+
         // let person = {name: "kannu"}
         //let person2 = {name: "kannu"}
         //expect(person).toBe(person1);
-    })
+    });
+
+
+    //toEqual matcher
+    it('Should initialize the constructor', function () {
+        const calculator = new Calculator();
+        const calculator2 = new Calculator();
+        //calculator.total = '0'
+        expect(calculator).toEqual(calculator2);
+      
+    });
 
 });
