@@ -136,9 +136,19 @@ describe('calculator.js', () => {
         const calculator = new Calculator();
         calculator.total = 10;
         expect(calculator.add(10)).toBe(20);
-        expect(calculator.total).tomatch(/-?\d+/);
-        expect(typeof calculator.total).tomatch('ber');
- })
+        expect(calculator.total).toMatch(/-?\d+/);
+        expect(typeof calculator.total).toMatch('ber');
+   });
+
+          //tomatch Matcher      
+          it('Should return a total as value', function () {
+            const calculator = new Calculator();
+            calculator.total = 10;
+        expect(calculator.total).toEqual(jasmine.anything());
+      //   expect(undefined).toEqual(jasmine.anything());
+
+           
+     })
  
 
 });
