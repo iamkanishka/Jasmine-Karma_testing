@@ -50,5 +50,5 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 19. toBeUndefined and toBeDefined Matchers. When to use these matchers in Jasmine Testing Framework.
 20. Understand toBeNull Matcher - Jasmine Testing Framework.
 21. toContain Matcher to find element in an array or substring in a string - Jasmine Testing
-
+22. toBeNaN Matcher to find the value whether it is NaN or not - Jasmine Testing Framework
 

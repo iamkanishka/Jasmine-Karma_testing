@@ -90,8 +90,15 @@ describe('calculator.js', () => {
     expect(arr).toContain(4);
     let constructorName = calculator.constructor.name;
     expect(constructorName).toContain('Cal');
-    
-    
-})
+   })
+
+
+     //toBeNaN
+     it('Doesnt handle Nan For multiply', function () {
+        const calculator = new Calculator();
+        calculator.total=10;
+        calculator.multiply('a');
+        expect(calculator.total).toBeNaN()
+       })
 
 });
