@@ -83,4 +83,15 @@ describe('calculator.js', () => {
     
 })
 
+   //toContain
+   it('Should have the calculator constructor', function () {
+    const calculator = new Calculator();
+    let arr =[1,2,3,4,5];
+    expect(arr).toContain(4);
+    let constructorName = calculator.constructor.name;
+    expect(constructorName).toContain('Cal');
+    
+    
+})
+
 });
