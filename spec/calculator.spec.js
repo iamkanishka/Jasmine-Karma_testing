@@ -11,18 +11,26 @@ describe('calculator.js', () => {
 
  })
  it('Should subtract number from the total',function(){
-    // const calculator = new Calculator();
-    // expect(calculator.subtract(4)).toBe(4);
+    const calculator = new Calculator();
+    calculator.total =30;
+    calculator.subtract(5);
+    expect(calculator.total).toBe(25);
+
  })
 
  it('Should multiply number from the total',function(){
-    // const calculator = new Calculator();
-    // expect(calculator.subtract(4)).toBe(16);
+    const calculator = new Calculator();
+    calculator.total = 10;
+    calculator.multiply(2);
+    expect(calculator.total).toBe(20);
+
  })
 
  it('Should divide number from the total',function(){
-    // const calculator = new Calculator();
-    // expect(calculator.subtract(4)).toBe(4);
+    const calculator = new Calculator();
+    calculator.total = 10;
+    calculator.divide(2);
+    expect(calculator.total).toBe(5);
  })
 
 });

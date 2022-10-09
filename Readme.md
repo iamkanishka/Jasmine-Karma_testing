@@ -39,4 +39,6 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 8. Understanding the Testing File Naming Conventions and the concept of Suite in Jasmine Testing
 9. Create our Test Suite in the calculator spec file using describe method - Jasmine Testing
 10. Write first Spec in the Test Suite for Calculator Spec file - Jasmine Testing
+11. What is Expectations in Testing and write expectation in spec file using expect method - Jasmine
+12. Passing and Failing Specs. When can we say a spec is passed and failed - Jasmine Testing
 
