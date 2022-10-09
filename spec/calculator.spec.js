@@ -156,8 +156,7 @@ describe('calculator.js', () => {
         expect(calculator).toEqual(jasmine.any(Calculator));
         expect(calculator.total).toEqual(jasmine.any(Number));
 
-
-       })
+   })
 
 
 });
