@@ -41,7 +41,7 @@ describe('calculator.js', () => {
         expect(calculator.total).toBe(0);
         expect(calculator.total).toBeFalsy();
 
-   
+
         // let person = {name: "kannu"}
         //let person2 = {name: "kannu"}
         //expect(person).toBe(person1);
@@ -56,7 +56,7 @@ describe('calculator.js', () => {
         expect(calculator).toBeTruthy();
         expect(calculator2).toBeTruthy();
         expect(calculator).toEqual(calculator2);
-      
+
     });
 
     //not matcther
@@ -64,41 +64,60 @@ describe('calculator.js', () => {
         const calculator = new Calculator();
         const calculator2 = new Calculator();
         expect(calculator).not.toBe(calculator2);
-   });
+    });
 
- //toBeUndefined  and tobeDefined
+    //toBeUndefined  and tobeDefined
     it('Should have common methods', function () {
-      const calculator = new Calculator();
-      expect(calculator.add).not.toBeUndefined();
-      expect(calculator.subtract).not.toBeUndefined();
-      expect(calculator.multiply).not.toBeUndefined();
-      expect(calculator.divide).toBeDefined();
-  })
-
-   //toBeNull
-   it('Should overwrite total value', function () {
-    const calculator = new Calculator();
-    calculator.total = null;
-    expect(calculator.total).toBeNull()
-    
-})
-
-   //toContain
-   it('Should have the calculator constructor', function () {
-    const calculator = new Calculator();
-    let arr =[1,2,3,4,5];
-    expect(arr).toContain(4);
-    let constructorName = calculator.constructor.name;
-    expect(constructorName).toContain('Cal');
-   })
-
-
-     //toBeNaN
-     it('Doesnt handle Nan For multiply', function () {
         const calculator = new Calculator();
-        calculator.total=10;
+        expect(calculator.add).not.toBeUndefined();
+        expect(calculator.subtract).not.toBeUndefined();
+        expect(calculator.multiply).not.toBeUndefined();
+        expect(calculator.divide).toBeDefined();
+    })
+
+    //toBeNull
+    it('Should overwrite total value', function () {
+        const calculator = new Calculator();
+        calculator.total = null;
+        expect(calculator.total).toBeNull()
+
+    })
+
+    //toContain
+    it('Should have the calculator constructor', function () {
+        const calculator = new Calculator();
+        let arr = [1, 2, 3, 4, 5];
+        expect(arr).toContain(4);
+        let constructorName = calculator.constructor.name;
+        expect(constructorName).toContain('Cal');
+    })
+
+
+    //toBeNaN
+    it('Doesnt handle Nan For multiply', function () {
+        const calculator = new Calculator();
+        calculator.total = 10;
         calculator.multiply('a');
         expect(calculator.total).toBeNaN()
-       })
+    })
+
+
+    //toBeNaN
+    it('Doesnt handle Nan For multiply', function () {
+        const calculator = new Calculator();
+        calculator.total = 10;
+        calculator.multiply('a');
+        expect(calculator.total).toBeNaN()
+    });
+
+    //toThrow Matcher      
+    it('Should throw error when divide by zero', function () {
+        const calculator = new Calculator();
+        calculator.total = 10;
+        expect(function() {calculator.divide(0)}).toThrow()
+
+        expect(function() {calculator.divide(0)}).toThrow(new  Error('Number Should not be zero'))
+
+    })
 
 });
