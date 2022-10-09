@@ -129,9 +129,16 @@ describe('calculator.js', () => {
 
         expect(function() {calculator.divide(0)}).toThrowError('Number Should not be zero')
         expect(function() {calculator.divide(0)}).toThrowError(ArithmeticError,'Number Should not be zero')
-
-
-           
     })
+
+       //tomatch Matcher      
+       it('Should return a total Number', function () {
+        const calculator = new Calculator();
+        calculator.total = 10;
+        expect(calculator.add(10)).toBe(20);
+        expect(calculator.total).tomatch(/-?\d+/);
+        expect(typeof calculator.total).tomatch('ber');
+ })
+ 
 
 });

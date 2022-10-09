@@ -52,4 +52,5 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 21. toContain Matcher to find element in an array or substring in a string - Jasmine Testing
 22. toBeNaN Matcher to find the value whether it is NaN or not - Jasmine Testing Framework.
 23. Learn toThrow matcher to check whether the function throw something - Jasmine Testing
-24. toThrowError Matcher and the difference between toThrow and toThrowError - Jasmine Testing
+24. toThrowError Matcher and the difference between toThrow and toThrowError - Jasmine Testing.
+25. toMatch Matcher for matching the actual data using regular expression - Jasmine Testing.
