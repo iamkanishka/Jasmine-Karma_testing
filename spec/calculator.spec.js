@@ -39,7 +39,9 @@ describe('calculator.js', () => {
     it('Should initializethe total', function () {
         const calculator = new Calculator();
         expect(calculator.total).toBe(0);
+        expect(calculator.total).toBeFalsy();
 
+   
         // let person = {name: "kannu"}
         //let person2 = {name: "kannu"}
         //expect(person).toBe(person1);
@@ -51,6 +53,8 @@ describe('calculator.js', () => {
         const calculator = new Calculator();
         const calculator2 = new Calculator();
         //calculator.total = '0'
+        expect(calculator).toBeTruthy();
+        expect(calculator2).toBeTruthy();
         expect(calculator).toEqual(calculator2);
       
     });
