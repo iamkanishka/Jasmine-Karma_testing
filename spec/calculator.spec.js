@@ -75,4 +75,12 @@ describe('calculator.js', () => {
       expect(calculator.divide).toBeDefined();
   })
 
+   //toBeNull
+   it('Should overwrite total value', function () {
+    const calculator = new Calculator();
+    calculator.total = null;
+    expect(calculator.total).toBeNull()
+    
+})
+
 });
