@@ -60,4 +60,4 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 29. What is Custom Matcher. How to create our own matcher & steps for creating it - Jasmine testing.
 30. Practical implementation of the Custom Matchers and use it in our Spec file - Jasmine Testing.
 31. List of Recommendations for organizing Specs in JavaScript Testing - Jasmine Testing.
-32. 
+32. Nested Suites | Write Nested Suites using describe in JavaScript testing | Jasmine Testing
