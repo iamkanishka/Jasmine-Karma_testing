@@ -36,9 +36,9 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 5. Calculate the result using switch case and update the result in the DOM.
 6. Improving Errors for the Calculator and Update the error message in the DOM. Jasmine testing.
 7. Setup jasmine testing Framework for the Unit testing in the Calculator program - jasmine testing.
-8. Understanding the Testing File Naming Conventions and the concept of Suite in Jasmine Testing
-9. Create our Test Suite in the calculator spec file using describe method - Jasmine Testing
-10. Write first Spec in the Test Suite for Calculator Spec file - Jasmine Testing
-11. What is Expectations in Testing and write expectation in spec file using expect method - Jasmine
-12. Passing and Failing Specs. When can we say a spec is passed and failed - Jasmine Testing
+8. Understanding the Testing File Naming Conventions and the concept of Suite in Jasmine Testing.
+9. Create our Test Suite in the calculator spec file using describe method - Jasmine Testing.
+10. Write first Spec in the Test Suite for Calculator Spec file - Jasmine Testing.
+11. What is Expectations in Testing and write expectation in spec file using expect method - Jasmine.
+12. Passing and Failing Specs. When can we say a spec is passed and failed - Jasmine Testing.
 

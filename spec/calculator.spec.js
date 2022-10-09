@@ -1,7 +1,8 @@
 
 describe('calculator.js', () => {
  //Todo Test or Specs
- it('Should add number to the total',function(){
+ //todisable the spec use xit
+ xit('Should add number to the total',function(){
     // expect 5+5 = 10;
     // expect(5+5).toBe(10);
 
