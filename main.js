@@ -1,4 +1,4 @@
- require("chromedriver");
+
 function Calculate(event) {
     const inputValue = event.target.value;
     const expression = /\+|\-|\*|\//
@@ -43,4 +43,4 @@ function updateResult(result){
     }
 }
 
-document.getElementById('inputValue').addEventListener('change', Calculate)
+document.getElementById('inputValue') && document.getElementById('inputValue').addEventListener('change', Calculate)

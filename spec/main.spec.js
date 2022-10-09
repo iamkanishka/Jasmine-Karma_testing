@@ -7,10 +7,25 @@ describe('main.js', function () {
         xit('Calls divide');
         xit('validate Operation');
         xit('Calls updateResult');
-  });
+    });
 
     describe('updateResult()', function () {
-        it('add result to the DOM Element');
+        let element
+        beforeAll(function () {
+             element = document.createElement('div');
+            element.setAttribute('id', 'result');
+            document.body.appendChild(element);
+        })
+        afterAll(function () {
+            let element = document.getElementById('result');
+            document.body.removeChild(element);
+
+        })
+        it('add result to the DOM Element', function () {
+            updateResult('5');
+            expect(element.innerText).toBe('5')
+
+        });
 
     });
 });
