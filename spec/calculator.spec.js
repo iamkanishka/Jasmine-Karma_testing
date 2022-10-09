@@ -59,4 +59,13 @@ describe('calculator.js', () => {
       
     });
 
+    it('Should have unique calculator object', function () {
+        const calculator = new Calculator();
+        const calculator2 = new Calculator();
+        expect(calculator).not.toBe(calculator2);
+
+      
+    });
+
+
 });

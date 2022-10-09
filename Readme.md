@@ -46,6 +46,6 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 15. Learn toBe Matcher in Jasmine Unit Testing Framework - JavaScript Testing.
 16. Understand toEqual Matcher. Difference between toBe & toEqual Matcher - Jasmine Testing
 17. ToBeTruthy and tobeFalsy Matcher and the difference between them - Jasmine Testing
-18. 
+18. Negating Matcher. Invert the matchers using Not in Jasmine Testing.
 
 
