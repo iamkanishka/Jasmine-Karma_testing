@@ -1,3 +1,4 @@
+ require("chromedriver");
 function Calculate(event) {
     const inputValue = event.target.value;
     const expression = /\+|\-|\*|\//
