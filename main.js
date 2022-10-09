@@ -7,7 +7,7 @@ function Calculate(event) {
     const numberB = +numbers[1];
     let getoperator = inputValue.match(expression);
    if(isNaN(numberA) || isNaN(numberB) || getoperator ===null){
-        updateResult('Operation Not recogniced')
+        updateResult('Expression Not recogniced')
         return
     }
     let operator =getoperator[0]
@@ -28,6 +28,8 @@ function Calculate(event) {
         case '/':
             result = calculator.divide(numberB);
            break;
+           default:
+             result = "Operation Not Recognized"
    }
 
    updateResult(result)

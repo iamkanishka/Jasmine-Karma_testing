@@ -63,3 +63,4 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 32. Nested Suites | Write Nested Suites using describe in JavaScript testing | Jasmine Testing.
 33. Setup and Teardown Life cycle Methods for Suites in JavaScript Testing - Jasmine Testing.
 34. Implementation of beforeEach and afterEach methods in the Test Suite - Jasmine Testing.
+35. Implement main.js spec file & create all the available specs for the functions - Jasmine Testing
