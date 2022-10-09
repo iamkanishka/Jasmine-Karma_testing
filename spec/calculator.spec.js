@@ -59,13 +59,22 @@ describe('calculator.js', () => {
       
     });
 
+    //not matcther
     it('Should have unique calculator object', function () {
         const calculator = new Calculator();
         const calculator2 = new Calculator();
         expect(calculator).not.toBe(calculator2);
+   });
 
-      
-    });
+ //toBeUndefined 
+    it('Should have common methods', function () {
+      const calculator = new Calculator();
+      expect(calculator.add).not.toBeUndefined();
+      expect(calculator.subtract).not.toBeUndefined();
+      expect(calculator.multiply).not.toBeUndefined();
+      expect(calculator.divide).toBeDefined();
 
+    
+    })
 
 });
