@@ -120,4 +120,18 @@ describe('calculator.js', () => {
 
     })
 
+
+      //toThrowError Matcher      
+      it('Should throw error with message when divide by zero', function () {
+        const calculator = new Calculator();
+        calculator.total = 10;
+        expect(function() {calculator.divide(0)}).toThrowError();
+
+        expect(function() {calculator.divide(0)}).toThrowError('Number Should not be zero')
+        expect(function() {calculator.divide(0)}).toThrowError(ArithmeticError,'Number Should not be zero')
+
+
+           
+    })
+
 });
