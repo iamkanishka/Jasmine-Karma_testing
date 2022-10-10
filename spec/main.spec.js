@@ -7,10 +7,10 @@ describe('main.js', function () {
             expect(window.updateResult).toHaveBeenCalledWith('Expression Not recogniced');
             expect(window.updateResult).toHaveBeenCalledTimes(1);
 
-            
-          });
 
-          it('validate Expression if the second number is valid', function () {
+        });
+
+        it('validate Expression if the second number is valid', function () {
             spyOn(window, 'updateResult');// and.stub is the default one and can be ommitted
             Calculate('3+b');
             expect(window.updateResult).toHaveBeenCalled();
@@ -18,10 +18,10 @@ describe('main.js', function () {
             expect(window.updateResult).toHaveBeenCalledTimes(1);
 
 
-          });
+        });
 
-          
-          it('validate Expression if the operation is valid', function () {
+
+        it('validate Expression if the operation is valid', function () {
             spyOn(window, 'updateResult');// and.stub is the default one and can be ommitted
             Calculate('3_3');
             expect(window.updateResult).toHaveBeenCalled();
@@ -29,12 +29,12 @@ describe('main.js', function () {
             expect(window.updateResult).toHaveBeenCalledTimes(1);
 
 
-          });
+        });
 
 
-        it('Calls add', function(){
-         const spy = spyOn(Calculator.prototype,'add');
-            
+        it('Calls add', function () {
+            const spy = spyOn(Calculator.prototype, 'add');
+
             Calculate('3+2');
             //TODO Expectation
 
@@ -44,9 +44,9 @@ describe('main.js', function () {
             expect(spy).toHaveBeenCalledWith(3);
 
         });
-        it('Calls subtract', function(){
-         const spy = spyOn(Calculator.prototype,'subtract');
-            
+        it('Calls subtract', function () {
+            const spy = spyOn(Calculator.prototype, 'subtract');
+
             Calculate('3-2');
             //TODO Expectation
             expect(spy).toHaveBeenCalled();
@@ -56,9 +56,9 @@ describe('main.js', function () {
 
 
         });
-        it('Calls multiply', function(){
-         const spy = spyOn(Calculator.prototype,'multiply');
-            
+        it('Calls multiply', function () {
+            const spy = spyOn(Calculator.prototype, 'multiply');
+
             Calculate('4*5');
             //TODO Expectation
 
@@ -68,10 +68,11 @@ describe('main.js', function () {
             expect(spy).toHaveBeenCalledWith(5);
 
         });
-        it('Calls divide', function(){
-         const spy = spyOn(Calculator.prototype,'divide');
-            
+        it('Calls divide', function () {
+            const spy = spyOn(Calculator.prototype, 'divide');
+
             Calculate('6/3');
+
             //TODO Expectation
 
             expect(spy).toHaveBeenCalled();
@@ -80,8 +81,19 @@ describe('main.js', function () {
             expect(spy).not.toHaveBeenCalledWith(6);
 
         });
-        xit('validate Operation');
-        xit('Calls updateResult');
+
+        it('Calls updateResult', function () {
+            spyOn(window, 'updateResult');
+            const spy = spyOn(Calculator.prototype, 'multiply').and.callThrough();
+
+            Calculate('3*3');
+            expect(spy).toHaveBeenCalled();
+
+            expect(window.updateResult).toHaveBeenCalled();
+            expect(window.updateResult).toHaveBeenCalledWith(9);
+
+
+        });
     });
 
     describe('updateResult()', function () {
