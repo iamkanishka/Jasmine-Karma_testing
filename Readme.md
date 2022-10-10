@@ -66,4 +66,4 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 35. Implement main.js spec file & create all the available specs for the functions - Jasmine Testing.
 36. Implement beforeAll and afterAll lifecycle methods in main spec file - Jasmine Testing.
 37. Use of this keyword in Jasmine Testing. How to use the "this" in specs - Jasmine Testing.
-38. Jasmine Spies and Why we need to use the spies in Unit Testing - Jasmine Testing
+38. Jasmine Spies and Why we need to use the spies in Unit Testing - Jasmine Testing.
