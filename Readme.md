@@ -75,3 +75,4 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 44. Spying on the prototypes using spyOn method - Jasmine Testing.
 45. Spying on the methods multiply, divide and subtract calculator prototypes - Jasmine Testing.
 46. Call the implementation of the spy function using callThrough - Jasmine Testing.
+47. Call customized functionality for a spy method using callFake - Jasmine Testing.

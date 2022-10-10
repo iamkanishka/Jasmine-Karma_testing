@@ -82,7 +82,7 @@ describe('main.js', function () {
 
         });
 
-        it('Calls updateResult', function () {
+        it('Calls updateResult(exmaple for callThrough)', function () {
             spyOn(window, 'updateResult');
             const spy = spyOn(Calculator.prototype, 'multiply').and.callThrough();
 
@@ -94,6 +94,24 @@ describe('main.js', function () {
 
 
         });
+
+          
+        it('Calls updateResult(exmaple for callFake)', function () {
+            spyOn(window, 'updateResult');
+            const spy = spyOn(Calculator.prototype, 'multiply').and.callFake(function(){
+                return 'Fake Call'
+            });
+
+            Calculate('3*3');
+            expect(spy).toHaveBeenCalled();
+
+            expect(window.updateResult).toHaveBeenCalled();
+            expect(window.updateResult).toHaveBeenCalledWith('Fake Call');
+
+
+        });
+
+
     });
 
     describe('updateResult()', function () {
