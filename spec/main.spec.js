@@ -33,22 +33,53 @@ describe('main.js', function () {
 
 
         it('Calls add', function(){
-         const spy =    spyOn(Calculator.prototype,'add');
+         const spy = spyOn(Calculator.prototype,'add');
             
             Calculate('3+2');
+            //TODO Expectation
 
             expect(spy).toHaveBeenCalled();
             expect(spy).toHaveBeenCalledTimes(2);
             expect(spy).toHaveBeenCalledWith(2);
             expect(spy).toHaveBeenCalledWith(3);
 
-
-
-            //TODO Expectation
         });
-        xit('Calls subtract');
-        xit('Calls multiply');
-        xit('Calls divide');
+        it('Calls subtract', function(){
+         const spy = spyOn(Calculator.prototype,'subtract');
+            
+            Calculate('3-2');
+            //TODO Expectation
+            expect(spy).toHaveBeenCalled();
+            expect(spy).toHaveBeenCalledWith(2);
+            expect(spy).not.toHaveBeenCalledWith(3);
+            expect(spy).toHaveBeenCalledTimes(1);
+
+
+        });
+        it('Calls multiply', function(){
+         const spy = spyOn(Calculator.prototype,'multiply');
+            
+            Calculate('4*5');
+            //TODO Expectation
+
+            expect(spy).toHaveBeenCalled();
+            expect(spy).toHaveBeenCalledTimes(1);
+            expect(spy).not.toHaveBeenCalledWith(4);
+            expect(spy).toHaveBeenCalledWith(5);
+
+        });
+        it('Calls divide', function(){
+         const spy = spyOn(Calculator.prototype,'divide');
+            
+            Calculate('6/3');
+            //TODO Expectation
+
+            expect(spy).toHaveBeenCalled();
+            expect(spy).toHaveBeenCalledTimes(1);
+            expect(spy).toHaveBeenCalledWith(3);
+            expect(spy).not.toHaveBeenCalledWith(6);
+
+        });
         xit('validate Operation');
         xit('Calls updateResult');
     });
