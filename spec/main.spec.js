@@ -1,12 +1,25 @@
 describe('main.js', function () {
     describe('main()', function () {
-        xit('validate Expression if the number is valid',function(){
-         spyOn(window,'updateResult').and.stub();
-         Calculate('a+3');
+        it('validate Expression if the first  number is valid', function () {
+            spyOn(window, 'updateResult').and.stub();
+            Calculate('a+3');
+            expect(window.updateResult).toHaveBeenCalled();
+          });
 
-        //  expect(calculate('a+3')).toBe(5)
+          it('validate Expression if the second number is valid', function () {
+            spyOn(window, 'updateResult').and.stub();
+            Calculate('3+b');
+            expect(window.updateResult).toHaveBeenCalled();
+          });
 
-        });
+          
+          it('validate Expression if the operation is valid', function () {
+            spyOn(window, 'updateResult').and.stub();
+            Calculate('3_3');
+            expect(window.updateResult).toHaveBeenCalled();
+          });
+
+
         xit('Calls add');
         xit('Calls subtract');
         xit('Calls multiply');
@@ -16,15 +29,15 @@ describe('main.js', function () {
     });
 
     describe('updateResult()', function () {
-       
+
         beforeAll(function () {
-            const  element = document.createElement('div');
+            const element = document.createElement('div');
             element.setAttribute('id', 'result');
             document.body.appendChild(element);
             this.element = element
         })
         afterAll(function () {
-       
+
             document.body.removeChild(this.element);
 
         })

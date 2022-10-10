@@ -1,6 +1,6 @@
 
-function Calculate(event) {
-    const inputValue = event.target.value;
+function Calculate(value) {
+    const inputValue = value;
     const expression = /\+|\-|\*|\//
     const numbers = inputValue.split(expression);
     const numberA = +numbers[0];
@@ -43,4 +43,6 @@ function updateResult(result){
     }
 }
 
-document.getElementById('inputValue') && document.getElementById('inputValue').addEventListener('change', Calculate)
+document.getElementById('inputValue') && document.getElementById('inputValue').addEventListener('change', function(event){
+   Calculate(event.target.value)
+})
