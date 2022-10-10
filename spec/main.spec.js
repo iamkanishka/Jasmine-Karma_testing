@@ -1,22 +1,28 @@
 describe('main.js', function () {
     describe('main()', function () {
         it('validate Expression if the first  number is valid', function () {
-            spyOn(window, 'updateResult').and.stub();
+            spyOn(window, 'updateResult');// and.stub is the default one and can be ommitted
             Calculate('a+3');
             expect(window.updateResult).toHaveBeenCalled();
+            expect(window.updateResult).toHaveBeenCalledWith('Expression Not recogniced');
+            
           });
 
           it('validate Expression if the second number is valid', function () {
-            spyOn(window, 'updateResult').and.stub();
+            spyOn(window, 'updateResult');// and.stub is the default one and can be ommitted
             Calculate('3+b');
             expect(window.updateResult).toHaveBeenCalled();
+            expect(window.updateResult).toHaveBeenCalledWith('Expression Not recogniced');
+
           });
 
           
           it('validate Expression if the operation is valid', function () {
-            spyOn(window, 'updateResult').and.stub();
+            spyOn(window, 'updateResult');// and.stub is the default one and can be ommitted
             Calculate('3_3');
             expect(window.updateResult).toHaveBeenCalled();
+            expect(window.updateResult).toHaveBeenCalledWith('Expression Not recogniced');
+
           });
 
 
