@@ -111,6 +111,19 @@ describe('main.js', function () {
 
         });
 
+        it('Calls updateResult(exmaple for returnValue)', function () {
+            spyOn(window, 'updateResult');
+            const spy = spyOn(Calculator.prototype, 'multiply').and.returnValue('returns a value')
+
+            Calculate('3*3');
+            expect(spy).toHaveBeenCalled();
+
+            expect(window.updateResult).toHaveBeenCalled();
+            expect(window.updateResult).toHaveBeenCalledWith('returns a value');
+
+
+        });
+
 
     });
 
