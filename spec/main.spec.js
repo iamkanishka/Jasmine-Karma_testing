@@ -5,6 +5,8 @@ describe('main.js', function () {
             Calculate('a+3');
             expect(window.updateResult).toHaveBeenCalled();
             expect(window.updateResult).toHaveBeenCalledWith('Expression Not recogniced');
+            expect(window.updateResult).toHaveBeenCalledTimes(1);
+
             
           });
 
@@ -13,6 +15,8 @@ describe('main.js', function () {
             Calculate('3+b');
             expect(window.updateResult).toHaveBeenCalled();
             expect(window.updateResult).toHaveBeenCalledWith('Expression Not recogniced');
+            expect(window.updateResult).toHaveBeenCalledTimes(1);
+
 
           });
 
@@ -22,6 +26,8 @@ describe('main.js', function () {
             Calculate('3_3');
             expect(window.updateResult).toHaveBeenCalled();
             expect(window.updateResult).toHaveBeenCalledWith('Expression Not recogniced');
+            expect(window.updateResult).toHaveBeenCalledTimes(1);
+
 
           });
 
