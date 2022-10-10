@@ -1,6 +1,12 @@
 describe('main.js', function () {
     describe('main()', function () {
-        xit('validate Expression');
+        xit('validate Expression if the number is valid',function(){
+         spyOn(window,'updateResult').and.stub();
+         Calculate('a+3');
+
+        //  expect(calculate('a+3')).toBe(5)
+
+        });
         xit('Calls add');
         xit('Calls subtract');
         xit('Calls multiply');
