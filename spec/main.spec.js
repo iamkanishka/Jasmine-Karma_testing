@@ -32,7 +32,20 @@ describe('main.js', function () {
           });
 
 
-        xit('Calls add');
+        it('Calls add', function(){
+         const spy =    spyOn(Calculator.prototype,'add');
+            
+            Calculate('3+2');
+
+            expect(spy).toHaveBeenCalled();
+            expect(spy).toHaveBeenCalledTimes(2);
+            expect(spy).toHaveBeenCalledWith(2);
+            expect(spy).toHaveBeenCalledWith(3);
+
+
+
+            //TODO Expectation
+        });
         xit('Calls subtract');
         xit('Calls multiply');
         xit('Calls divide');

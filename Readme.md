@@ -72,3 +72,4 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 41. Usage of toHaveBeenCalled spy matcher in Spec file For Jasmine Spies - Jasmine Testing.
 42. toHaveBeenCalledWith Matcher in Jasmine Spies - Jasmine Testing.
 43. toHaveBeenCalledTimes Matcher in Jasmine Spies - Jasmine Testing.
+44. Spying on the prototypes using spyOn method - Jasmine Testing.
