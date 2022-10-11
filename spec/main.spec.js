@@ -95,10 +95,10 @@ describe('main.js', function () {
 
         });
 
-          
+
         it('Calls updateResult(exmaple for callFake)', function () {
             spyOn(window, 'updateResult');
-            const spy = spyOn(Calculator.prototype, 'multiply').and.callFake(function(){
+            const spy = spyOn(Calculator.prototype, 'multiply').and.callFake(function () {
                 return 'Fake Call'
             });
 
@@ -126,16 +126,21 @@ describe('main.js', function () {
 
         it('Calls updateResult(exmaple for returnValues)', function () {
             spyOn(window, 'updateResult');
-            const spy = spyOn(Calculator.prototype, 'add').and.returnValues(null,'second call')
+            const spy = spyOn(Calculator.prototype, 'add').and.returnValues(null, 'second call')
 
             Calculate('3+3');
             expect(spy).toHaveBeenCalled();
 
             expect(window.updateResult).toHaveBeenCalled();
             expect(window.updateResult).toHaveBeenCalledWith('second call');
-
-
         });
+
+        it('does not handle Errors', function(){
+            spyOn(Calculator.prototype, 'multiply').and.throwError('some error');
+            expect(function(){Calculate('3*3')}).toThrowError('some error')
+
+
+        })
 
 
     });
