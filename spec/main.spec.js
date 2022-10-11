@@ -171,7 +171,15 @@ describe('main.js', function () {
             spyOn(document, 'getElementBy').and.returnValue({
                 innerText: null,
             })
+           const spy =  spyOnProperty(Calculator.prototype,'version', 'get').returnValue('0.8');
             showVersion();
+            expect(spy).toHaveBeenCalled();
+            expect(spy).toHaveBeenCalledTimes(1);
+            expect(spy()).toEqual('0.8');
+
+
+
+
         });
     });
 

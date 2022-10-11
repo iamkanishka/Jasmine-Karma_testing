@@ -82,3 +82,4 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 51. Create new getter property in calculator object using Object defineProperty - Jasmine Testing.
 52. Show version number in the calculator UI from the calculator getter property - Jasmine Testing.
 53. Implement the Version Test Case by spying on the document getElementById - Jasmine Testing.
+54. Spy on the getter and setter properties using spyOnProperty method - Jasmine Testing.
