@@ -1,5 +1,5 @@
 describe('main.js', function () {
-    describe('main()', function () {
+    describe('calculate()', function () {
         it('validate Expression if the first  number is valid', function () {
             spyOn(window, 'updateResult');// and.stub is the default one and can be ommitted
             Calculate('a+3');
@@ -135,9 +135,9 @@ describe('main.js', function () {
             expect(window.updateResult).toHaveBeenCalledWith('second call');
         });
 
-        it('does not handle Errors', function(){
+        it('does not handle Errors', function () {
             spyOn(Calculator.prototype, 'multiply').and.throwError('some error');
-            expect(function(){Calculate('3*3')}).toThrowError('some error')
+            expect(function () { Calculate('3*3') }).toThrowError('some error')
 
 
         })
@@ -165,4 +165,17 @@ describe('main.js', function () {
         });
 
     });
+
+    describe('showVersion()', function () {
+        it('should call the showversion method', function () {
+            spyOn(document, 'getElementBy').and.returnValue({
+                innerText: null,
+            })
+            showVersion();
+        });
+    });
+
+
+
+
 });
