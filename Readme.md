@@ -79,3 +79,4 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 48. Return a single value with the spy using returnValue configuration method - Jasmine Testing.
 49. Return Multiple values with the spy method for every call using returnValues - Jasmine Testing.
 50. throwError config method to send error when a spy method is called - Jasmine Testing.
+51. Create new getter property in calculator object using Object defineProperty - Jasmine Testing.

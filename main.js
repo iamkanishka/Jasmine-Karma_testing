@@ -13,7 +13,7 @@ function Calculate(value) {
     let operator =getoperator[0]
     const calculator = new Calculator();
     calculator.add(numberA);
-    console.log(calculator.total);
+   // console.log(calculator.total);
     let result
     switch (operator) {
         case '+':
