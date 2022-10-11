@@ -124,6 +124,19 @@ describe('main.js', function () {
 
         });
 
+        it('Calls updateResult(exmaple for returnValues)', function () {
+            spyOn(window, 'updateResult');
+            const spy = spyOn(Calculator.prototype, 'add').and.returnValues(null,'second call')
+
+            Calculate('3+3');
+            expect(spy).toHaveBeenCalled();
+
+            expect(window.updateResult).toHaveBeenCalled();
+            expect(window.updateResult).toHaveBeenCalledWith('second call');
+
+
+        });
+
 
     });
 
