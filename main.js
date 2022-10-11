@@ -42,6 +42,14 @@ function updateResult(result){
     }
 }
 
+function showVersion(){
+    const calculator =  new Calculator();
+    const element =  document.getElementById('version');
+    if(element){
+        element.innerText=calculator.version
+    }
+}
+
 document.getElementById('inputValue') && document.getElementById('inputValue').addEventListener('change', function(event){
    Calculate(event.target.value)
 })

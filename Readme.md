@@ -80,3 +80,4 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 49. Return Multiple values with the spy method for every call using returnValues - Jasmine Testing.
 50. throwError config method to send error when a spy method is called - Jasmine Testing.
 51. Create new getter property in calculator object using Object defineProperty - Jasmine Testing.
+52. Show version number in the calculator UI from the calculator getter property - Jasmine Testing.
