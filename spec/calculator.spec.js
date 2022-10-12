@@ -222,13 +222,19 @@ describe('calculator.js', () => {
 
 
 
+        describe('get Version', function () {
+            it('fetches version from external source', function (done) {
+              calculator.version.then(function (version) {
+                expect(version).toBe('0.4');
+                done();
+              });
+            });
 
 
 
 
 
-
-
+        })
 
 
 
