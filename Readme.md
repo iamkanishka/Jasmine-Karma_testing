@@ -88,3 +88,4 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 57. Create Spy on the api Fetch call to avoid making real call while testing - Jasmine Testing.
 58. Testing JavaScript async and await calls - Jasmine Testing.
 59. Initialize the npm package and create package.json file in calculator app - Jasmine Testing.
+60. Understand Karma Test Runner Tool for automating tests in Jasmine Testing application.
