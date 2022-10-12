@@ -89,3 +89,5 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 58. Testing JavaScript async and await calls - Jasmine Testing.
 59. Initialize the npm package and create package.json file in calculator app - Jasmine Testing.
 60. Understand Karma Test Runner Tool for automating tests in Jasmine Testing application.
+61. Install the Karma Runner and Jasmine as dev dependencies in the application - Jasmine Testing.
+62. Create Karma Configuration file, karma.config.js for running Tests in app - Jasmine Testing
