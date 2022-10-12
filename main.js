@@ -42,13 +42,17 @@ function updateResult(result){
     }
 }
 
-function showVersion(){
-    const calculator =  new Calculator();
-    const element =  document.getElementById('version');
-    if(element){
-        element.innerText=calculator.version
+
+function showVersion() {
+    const calculator = new Calculator();
+    const element = document.getElementById('version');
+  
+    if (element) {
+      calculator.version.then(function (version) {
+        element.innerText = version;
+      });
     }
-}
+  }
 
 document.getElementById('inputValue') && document.getElementById('inputValue').addEventListener('change', function(event){
    Calculate(event.target.value)

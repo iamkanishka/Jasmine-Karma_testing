@@ -83,3 +83,4 @@ So We will be Looking These Unit-Testing with Jasmine and Karma   features and L
 52. Show version number in the calculator UI from the calculator getter property - Jasmine Testing.
 53. Implement the Version Test Case by spying on the document getElementById - Jasmine Testing.
 54. Spy on the getter and setter properties using spyOnProperty method - Jasmine Testing.
+55. Asynchronous call with Fetch method to get version from api url using Promises - Jasmine Testing.

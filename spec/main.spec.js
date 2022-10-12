@@ -166,22 +166,21 @@ describe('main.js', function () {
 
     });
 
-    describe('showVersion()', function () {
+    xdescribe('showVersion()', function () {
         it('should call the showversion method', function () {
-            spyOn(document, 'getElementBy').and.returnValue({
-                innerText: null,
-            })
-           const spy =  spyOnProperty(Calculator.prototype,'version', 'get').returnValue('0.8');
-            showVersion();
-            expect(spy).toHaveBeenCalled();
-            expect(spy).toHaveBeenCalledTimes(1);
-            expect(spy()).toEqual('0.8');
-
-
-
-
+          spyOn(document, 'getElementById').and.returnValue({
+            innerText: null
+          });
+          const spy = spyOnProperty(Calculator.prototype, 'version', 'get').and.returnValue('0.9');
+    
+          showVersion();
+          expect(spy).toHaveBeenCalled();
+          expect(spy).toHaveBeenCalledTimes(1);
+          expect(spy()).toEqual('0.9');
         });
-    });
+      });
+
+      
 
 
 
